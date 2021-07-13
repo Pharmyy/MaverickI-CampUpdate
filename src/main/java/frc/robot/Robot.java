@@ -18,7 +18,7 @@ import frc.robot.Subsystems.Drivetrain;
  * project.
  */
 public class Robot extends TimedRobot {
-  private Rikers rikers; 
+  private Rikers rikers;
   private static final String kDefaultAuto = "Default";
   private static final String kCustomAuto = "My Auto";
   private String m_autoSelected;

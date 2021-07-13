@@ -2,6 +2,7 @@ package frc.robot;
 
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.cameraserver.CameraServer;
+import edu.wpi.first.wpilibj.Joystick;
 import frc.robot.Hardware.RobotID;
 import frc.robot.Subsystems.*;
 import frc.robot.Utils.RobotState;
@@ -36,6 +37,7 @@ public class Rikers {
 
     public void periodicTasks() {
         _robot.getJoystickValues();
+        _drivetrain.arcadeDrive(RobotID.driverJoystick.getRawAxis(1), RobotID.driverJoystick.getRawAxis(4));
     
     }
 
